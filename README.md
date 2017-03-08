@@ -1,7 +1,7 @@
-![logo](resources/icono.png?raw=true)
+![logo](resources/icono.png?raw=true "Ploding logo")
 
 
-# Tamer Database
+# Chapas Tamer Database
 
 Base de datos de tipo experimental diseñada para la gestión del stock de chapas de Tamer Aragonesa S.A.
 
@@ -14,7 +14,8 @@ TODO LIST
 - [ ] Portar base de datos Access a MySQL
 - [x] GUI básico
 - [ ] GUI configuraciones
-- [ ] GUI acerca de..., nuevos clientes, etc.
+- [ ] GUI acerca de..., nuevas chapas, nuevas referencias, etc.
+- [ ] Varios tipos de acceso (administrador y usuario).
 - [ ] Basic and simple connection to MySQL DB
 - [ ] init model for DB for users
 - [ ] init model for DB for bils
