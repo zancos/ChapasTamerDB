@@ -1,6 +1,7 @@
-# Tamer Database
-
 ![logo](resources/icono.png?raw=true)
+
+
+# Tamer Database
 
 Base de datos de tipo experimental diseñada para la gestión del stock de chapas de Tamer Aragonesa S.A.
 
