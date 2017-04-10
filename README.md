@@ -1,15 +1,15 @@
-# Tamer Database
+# SoftInventario
 
-Base de datos de tipo experimental diseñada para el proceso de trabajo de Tamer Aragonesa S.A.
+Base de datos para la gestión personal de material eléctrico y mecánico.
 
-Desarrollado por Ploding.com para Tamer Aragonesa S.A.
+Desarrollado por Ploding.com
 
 
 TODO LIST
 =========
 
 - [ ] Portar base de datos Access a MySQL
-- [x] GUI básico
+- [ ] GUI básico
 - [ ] GUI configuraciones
 - [ ] GUI acerca de..., nuevos clientes, etc.
 - [ ] Basic and simple connection to MySQL DB
