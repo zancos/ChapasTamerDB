@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.6.2)
 
-set(SOLUTION_NAME TamerDB) # this is the unique place where solution name is set
+set(SOLUTION_NAME SoftInventario) # this is the unique place where solution name is set
 project(${SOLUTION_NAME})
 
 
@@ -35,7 +35,7 @@ endif(WIN32 AND NOT(MSVC))
 # cmake includes
 include(cmake/OpenGL.cmake)
 include(cmake/Qt.cmake)
-include(cmake/Boost.cmake)
+#include(cmake/Boost.cmake)
 include(cmake/Project.cmake)
 
 set(GLOBAL_PROJECT_NAME ${PROJECT_NAME})

@@ -20,6 +20,8 @@ ui(new Ui::MainWindow)
 	bool ok = db.open();
 	qDebug() << "Conexión db:" << ok;
 	db.close();
+
+
 	
 }
 

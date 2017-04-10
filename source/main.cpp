@@ -5,11 +5,11 @@
 #include <QDebug>
 #include <QtPlugin>
 
-#include <boost\locale.hpp>
+//#include <boost\locale.hpp>
 #include <iostream>
 
 #include "mainwindow.h"
-//#include "settings.h"
+#include "settings.h"
 
 int main(int argc, char *argv[])
 {
@@ -37,25 +37,28 @@ int main(int argc, char *argv[])
 	a.setWindowIcon(QPixmap(":icono.png"));
 
 	// Config file
+	
 	const QString settingFilePath = QDir::currentPath() + "/configTamerDB.ini";
 	QSettings *settings = new QSettings(settingFilePath, QSettings::IniFormat);
 	qDebug() << "Config file directory:" << settingFilePath;
 	QFile configInitFile(settingFilePath);
 	
 
+	//readDataBaseSettings(settings);
+
 	if (!configInitFile.exists())
 	{
 		QMessageBox::StandardButtons fileMessage;
-		fileMessage = QMessageBox::question(0, "Error al cargar la Configuracion", "No se encuentra el archivo de configuracion\n�Desea Crearlo?", QMessageBox::Yes | QMessageBox::No);
+		fileMessage = QMessageBox::question(0, "Error al cargar la Configuracion", "No se encuentra el archivo de configuracion\n¿Desea Crearlo?", QMessageBox::Yes | QMessageBox::No);
 		if (fileMessage == QMessageBox::Yes)
 		{
 			qDebug() << "YES";
 			settings->beginGroup("db");
-			settings->setValue("dbHost", "127.0.0.1");
+			settings->setValue("dbHost", "bbdd.ploding.com");
 			settings->setValue("dbPort", 3306);
-			settings->setValue("dbUser", "root");
-			settings->setValue("dbPass", "");
-			settings->setValue("dbName", "TamerDB");
+			settings->setValue("dbUser", "ddb92898");
+			settings->setValue("dbPass", "[3Emy#w[}B7R");
+			settings->setValue("dbName", "ddb92898");
 			settings->endGroup();
 			qDebug() << settings->value("dbHost");
 		}
